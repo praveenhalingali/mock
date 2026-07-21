@@ -13,6 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
+                mvn clean package
                 echo "Files in workspace:"
                 ls -la
                 '''
