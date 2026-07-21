@@ -26,14 +26,6 @@ pipeline {
                 '''
             }
         }
-
-        stage('Verify') {
-            steps {
-                sh '''
-                ls -l /opt/tomcat/webapps/ROOT/index.html
-                '''
-            }
-        }
     }
 
     post {
